@@ -23,6 +23,9 @@
 </ul>
 
 ## 1. Retrieve Related Data Pipeline (switchMap)
+- **What do we have?** - Typed in search userName
+- **What do we want?** - List of posts related to typed in user
+- **When do we want it?** - Aby time the user changes typed in search field
 ![alt text](screenshots/image-8.png)<br>
 
 ### 1.1 Retrieve Related Data Pipeline (with error handling!)
@@ -35,7 +38,9 @@ Rewripe pipeline:<br>
 ## 2. Lookup Reference Property Pipeline (combineLatest)
 To work with **multipe streams**, use a **combination** operator <br>
  1. Retrieve **category name** when initially we have only **categoryId**
- 2. Answer 3 questions first
+- **What do we have?** - Post and PostCategory
+- **What do we want?** - Add categoryName to the Post entity
+- **When do we want it?** - Whenever we get the data
 ![alt text](screenshots/image-3.png)<br>
 Lets break into smaller pieces with exemption handling<br>
 ![alt text](screenshots/image-4.png)<br>
