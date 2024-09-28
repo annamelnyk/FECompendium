@@ -6,6 +6,16 @@
   <li>Reactive Programming:
     <ul>
       <li>Programming paradigm that works with **asyncronous data streams**</li>
+      <li>It is a declarative programming paradigm conserned with data streams and propagation of change</li>
+      <li>Code is reactive when an input leads to an automatic change of output</li>
+      <li>Reactive development let us to:
+      - react to user actions<br>
+      - react to state chages <br>
+      - combine data streams<br>
+      - communicate between data components<br>
+      - be resilient to errors<br>
+      - manage state<br>
+      </li>
       <li>Data streams can be created from:<br>
         - UI Events<br>
         - HTTP Requests<br>
@@ -24,11 +34,30 @@
         - we can interact with data streams as any regular array<br>
       </li>
       <li>**Reactive Extensions / Reactive X (RxJS)** by Microsoft<br>
+        - By documentation **RxJS** is a library for composing asyncronous and event-based programs by using observable sequences<br>
+        - A library for observing and reacting to data and events by using observable sequences<br>
         - A library for composing asyncronous programs by using observable sequences<br>
         - Provides a list of operators which allow us to filter, select, transform, combine and compose observables<br>
       </li>
-      <li></li>
-      <li></li>
+      <li>**Why RxJs instead of:**<br>
+        - **Callback (is a functions that can be called back after async operation is complete):** - but is hard to manage with nested async operations<br>
+        - **Promise (is an object that may produce a single value in a future):** - but it can handle only single emittion and it is not cancellable<br>
+        - **async/await (is a special syntax that allows to write async code that looks syncronous):** - but it also can handle only single emittion and it is not cancellable)<br>
+        **Why RxJs:**<br>
+          <ul>
+            <li>Allow to work with different data sources using same techniques  and operators</li>
+            <li>**Compositionsl**. Allow easily combile and compose data from different sources</li>
+            <li>**Watchful**. Can producde multiple values over time and uses push model that notifies our code when specific action occured</li>
+            <li>**Lazy**. Evoluation will not start until subscription. It will execute only when we need a result</li>
+            <li>**Haddle errors**</li>
+            <li>**Cancellable**</li>
+          </ul>
+      </li>
+      <li>**How is RxJs used in Angular**<br>
+        - In Routing (this.route.params, this.route.data, this.route.events)<br>
+        - In Reactive Forms<br>
+        - HttpClient<br>
+      </li>
     </ul>
   </li>
 </ul>
