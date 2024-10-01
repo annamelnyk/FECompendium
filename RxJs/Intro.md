@@ -58,6 +58,18 @@
         - In Reactive Forms<br>
         - HttpClient<br>
       </li>
+      <li>**Observer**:<br>
+      - is a collection of callbacks that knows how listen to values deliveresd by the Observable<br>
+      - an Observer is a consumer of values delivered by an Observable<br>
+      - an Observer is also defined as an interface with *next*, *error* and *complete* methods<br>
+      - **Subscriber** - the subclass which implements Observer interface<br>
+      **Subscriber** - is an Observer that can unsubscribe from an Ob servable<br>
+      **Observer** - observes and responds to notifications<br>
+      **Observable** - a collection of events or values emitted over time. Events come from: user actions, application events, response from http, internal structures<br>
+      - **Hot Observable** - emits values right away
+      - **Cold Observable** - does not emit values untill there is the subscriber
+
+      </li>
     </ul>
   </li>
 </ul>
