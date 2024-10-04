@@ -66,9 +66,22 @@
       **Subscriber** - is an Observer that can unsubscribe from an Ob servable<br>
       **Observer** - observes and responds to notifications<br>
       **Observable** - a collection of events or values emitted over time. Events come from: user actions, application events, response from http, internal structures<br>
-      - **Hot Observable** - emits values right away
-      - **Cold Observable** - does not emit values untill there is the subscriber
-
+      - **Hot Observable** - emits values right away<br>
+      - **Cold Observable** - does not emit values untill there is the subscriber<br>
+      </li>
+      <li>Ways to stop receive notifications from observable (help avoides memory leaks):<br>
+      - call unsubscribe on subscription<br>
+      - call `complete` on the subscriber<br>
+      - use an operator that automaticly complete notifications<br>
+      - throw an error<br>
+      </li>
+      <li>Create observable with operators:<br>
+      - `of(array)` - creates one item - array of items<br>
+      - `from(array)` - creates each array item one by one emmitted from array of values<br>
+      - to create one by one items with `of(...array)`<br>
+      - both creates observable from array<br>
+      - `fromEvent`<br>
+      - `interval`<br>
       </li>
     </ul>
   </li>
